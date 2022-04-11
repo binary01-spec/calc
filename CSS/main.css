@@ -188,6 +188,7 @@ h1{
                 width: 100%;
                 font-size: 1.3rem;
                 position: absolute;
+                padding: 10px;
                 top: 50%;
                 text-align: right;
                 transform: translateY(-50%);
