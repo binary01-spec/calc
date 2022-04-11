@@ -1,0 +1,125 @@
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+   footer{
+            font-size: .5rem;
+            color:red;
+            position: fixed;
+            bottom:0;
+            left:50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+}
+        footer a{
+            color:peru;
+        }
+#button_Container{
+            
+            display: grid;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(5,60px);
+            grid-template-areas:
+                                "seven eight nine delete"
+                                "four five six plus"
+                                "one two three minus"
+                                " decimals zeros devide multiplies " 
+                                "reset reset equal equal";
+            grid-gap: 20px;
+            justify-content: center;
+         
+            
+            
+                                
+        }
+
+      
+        .zero{
+            grid-area: zeros;
+        }
+        .one{
+            grid-area: one;
+        }
+        .two{
+            grid-area:two;
+        }
+        .three{
+            grid-area: three;
+        }
+        .four{
+            grid-area:four;
+        }
+        .five{
+            grid-area: five;
+        }
+        .six{
+            grid-area:six;
+        }
+        .seven{
+            grid-area: seven;
+        }
+        .eight{
+            grid-area:eight;
+        }
+        .nine{
+            grid-area: nine;
+        }
+        .devide{
+            grid-area: devide;
+        }
+        .multiply{
+            grid-area: multiplies;
+        }
+        .plus{
+            grid-area:plus;
+        }
+        .minus{
+            grid-area:minus;
+        }
+        .equal{
+            grid-area: equal;
+        }
+        .decimal{
+            grid-area:decimals;
+        }
+        .delete{
+            grid-area:delete;
+        }
+        .reset{
+            grid-area:reset;
+        }
+@media(max-width:560px){
+   footer{
+       display:none;
+    }
+    main{
+        
+        padding:1rem;
+    }
+
+    #button_Container{
+            
+      
+        grid-template-columns: repeat(4,70px);
+        grid-template-rows: repeat(5,60px);
+    }
+}
+@media(max-width:480px){
+:root{
+    font-size: 28px;
+}
+    main{
+        width: 100%;
+    }
+
+    #button_Container{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,50px);
+    }
+}

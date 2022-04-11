@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/layout.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+
+  
+  
+</head>
+<body>
+
+<main>
+
+  <section id="title_theme">
+    <h1>calc</h1>
+    <div>
+      <ul class="slider_val">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+       <label for="theme">THEME</label>
+    <input id="theme" class="slider" type="range" min="1" max="3" step="1" value="1"/>
+    </div>
+  </section>
+  <div id="Results_container">
+    <p class="result"></p>
+
+  </div>
+<!-- 18 -->
+  <div id="button_Container">
+   
+    <button onclick="Primary_keys(this)" class=" Primary_keys zero">0</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys one">1</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys two">2</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys three">3</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys four">4</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys five">5</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys six">6</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys seven">7</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys eight">8</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys nine">9</button>
+
+    <button onclick="deleting()"  class="del_reset delete" >DEL</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys plus">+</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys minus">-</button>
+
+    <button  onclick="Primary_keys(this)" class=" Primary_keys multiply">x</button>
+
+    <button onclick="Primary_keys(this)"  class=" Primary_keys devide">/</button>
+
+    <button onclick="Primary_keys(this)" class=" Primary_keys decimal">.</button>
+
+    <button onclick="answer()" class="equal">=</button>
+
+    <button onclick="reset()" class=" del_reset reset">RESET</button>
+
+    
+   
+
+
+  </div>
+
+</main>
+  
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/abdul-fazil-b78a801b0/">fazil</a>.
+</footer> 
+</body>
+</html>
